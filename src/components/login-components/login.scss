@@ -1,0 +1,315 @@
+.register {
+  background-color: white;
+}
+
+.register > div {
+  display: flex;
+  align-items: center;
+  min-height: 720px;
+  justify-content: center;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35%;
+  min-height: 539px;
+}
+.register-container h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+.register-container > div {
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.register-center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .register-center-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+    a {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #0C2A92;
+    }
+    .forgot-pas {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    input {
+      width: 100%;
+      border: 1px solid #d9d9d9;
+      height: 42px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  label {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 13.5px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.signup-button {
+  width: 100%;
+  height: 32px px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #3a5b22;
+  background-color: #3a5b22;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  height: 42px;
+}
+.register-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  .google-apple {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      width: 48%;
+      height: 42px;
+      border-radius: 10px;
+      border: 1px solid #d9d9d9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    a {
+      color: #0f3dde;
+    }
+  }
+}
+
+@media (max-width: 976px) {
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    min-height: 539px;
+  }
+}
+@media (max-width: 797px) {
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    min-height: 539px;
+  }
+  .register-container > div {
+    h6 {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+
+
+}
+@media (max-width: 552px) {
+  .register-container > div {
+    h6 {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    min-height: 539px;
+  }
+
+  .register-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    .google-apple {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        width: 48%;
+        height: 42px;
+        border-radius: 10px;
+        border: 1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      a {
+        color: #0f3dde;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .register-container > div {
+    h6 {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+    }
+  }
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 85%;
+    min-height: 539px;
+  }
+  .register > div {
+    display: flex;
+    align-items: center;
+    min-height: 620px;
+    justify-content: center;
+  }
+  .register-container h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 48px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+  }
+}
+
+@media (max-width: 330px) {
+  .register-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    .google-apple {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        width: 100%;
+        height: 42px;
+        border-radius: 10px;
+        border: 1px solid #d9d9d9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+
+    h4 {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      a {
+        color: #0f3dde;
+      }
+    }
+  }
+}
