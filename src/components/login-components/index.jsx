@@ -17,7 +17,7 @@ const LoginComponent = () => {
 
               <div className="register-center-item">
                 <label htmlFor="">Email address</label>
-                <input type="text" placeholder="Email address" />
+                <input type="email" placeholder="Email address" />
               </div>
               <div className="register-center-item">
                 <div className="forgot-pas">

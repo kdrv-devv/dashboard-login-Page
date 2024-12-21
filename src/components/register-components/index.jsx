@@ -16,12 +16,12 @@ const RegisterComponent = () => {
                 <input type="text" placeholder="Enter your name" />
               </div>
               <div className="register-center-item">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Email address" />
+                <label htmlFor="">Email address</label>
+                <input type="email" placeholder="Email address" />
               </div>
               <div className="register-center-item">
-                <label htmlFor="">Name</label>
-                <input type="text" placeholder="Password" />
+                <label htmlFor="">Password</label>
+                <input type="password" placeholder="Password" />
               </div>
               <div className="checkbox">
                 <input  id="chek" type="checkbox" />
