@@ -110,6 +110,12 @@
   display: flex;
 
   justify-content: space-between;
+  .card-swiper{
+    width: 64%;
+    img{
+      width: 100%;
+    }
+  }
   .sum {
     display: flex;
     flex-direction: column;
