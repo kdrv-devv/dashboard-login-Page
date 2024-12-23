@@ -19,7 +19,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 // import img
-import transactionRight from '../imges/goooo.png'
+import transactionRight from "../imges/goooo.png";
 import { FaChevronRight } from "react-icons/fa6";
 
 import mountain from "../imges/mountain-goals.svg";
@@ -29,6 +29,19 @@ import monica from "../imges/munisa.png";
 import jon from "../imges/jon.png";
 import mike from "../imges/mike.png";
 import mia from "../imges/misa.png";
+import { Link } from "react-router-dom";
+// import useForm 
+import { useForm} from "react-hook-form";
+
+function myForm (){
+  const {register , handleSubmit , formState:{errors} } = useForm()
+
+  const onSubmit = (data)=>{
+    console.log(data)
+  }
+}
+
+
 
 const Owerview = () => {
   const data = [
@@ -108,13 +121,21 @@ const Owerview = () => {
               <GoBellFill />
             </button>
           </Badge>
-          <div className="user">
-            <img src={userImg} alt="img" />
-            <div className="user-name">
-              <h5>Andrew</h5>
-              <h6>Admin account</h6>
+
+          {localStorage.getItem("token") ? (
+            <div className="user">
+              <img src={userImg} alt="img" />
+              <div className="user-name">
+                <h5>Andrew</h5>
+                <h6>Admin account</h6>
+              </div>
             </div>
-          </div>
+          ) : (
+            <Link to={"/login"}>
+              {" "}
+              <h3 className="log-in">Log in</h3>{" "}
+            </Link>
+          )}
         </div>
       </div>
 
@@ -343,11 +364,13 @@ const Owerview = () => {
                   <input type="number" placeholder="0" />
                   <h6>$</h6>
                 </div>
-                <button>Send the transfer <FaChevronRight /></button>
+                <button>
+                  Send the transfer <FaChevronRight />
+                </button>
               </div>
             </div>
             <div className="new-transaction-rigth">
-                <img src={transactionRight} alt="img" />
+              <img src={transactionRight} alt="img" />
             </div>
           </div>
         </div>
